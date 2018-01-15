@@ -52,5 +52,3 @@ test:
     # run tests
     - ./Tests/scripts/run_tests.sh
 
-    # terminate instance
-    - ./Tests/scripts/destroy_instances.sh
