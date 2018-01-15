@@ -47,6 +47,8 @@ test:
     # wait until server is ready
     - ./Tests/scripts/wait_until_server_ready.sh
 
+    - sleep 2m
+
     # run tests
     - ./Tests/scripts/run_tests.sh
 
