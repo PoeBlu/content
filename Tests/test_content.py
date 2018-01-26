@@ -60,12 +60,21 @@ def main():
         exit(1)
 
     with open(conf_path) as data_file:
-        conf = json.load(data_file)
+        try:
+            conf = json.load(data_file)
+        except:
+            print_error("Could not load conf file. It might has invalid json format")
+            sys.exit(1)
 
     secret_conf = None
     if secret_conf_path:
         with open(secret_conf_path) as data_file:
-            secret_conf = json.load(data_file)
+            try:
+                secret_conf = json.load(data_file)
+            except:
+                print_error("Could not load secret-conf file. It might has invalid json format")
+                sys.exit(1)
+
 
     tests = conf['tests']
 
