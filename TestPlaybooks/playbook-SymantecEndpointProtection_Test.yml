@@ -33,10 +33,10 @@ tasks:
       version: -1
       name: sep-system-info
       description: Get the system information (version, AV definition).
-      script: Symantec Endpoint Protection|||sep-system-info
+      script: Symantec Endpoint Protection 14|||sep-system-info
       type: regular
       iscommand: true
-      brand: Symantec Endpoint Protection
+      brand: Symantec Endpoint Protection 14
     nexttasks:
       '#none#':
       - "22"
@@ -56,10 +56,10 @@ tasks:
       version: -1
       name: sep-client-content
       description: Retrieves the client content.
-      script: Symantec Endpoint Protection|||sep-client-content
+      script: Symantec Endpoint Protection 14|||sep-client-content
       type: regular
       iscommand: true
-      brand: Symantec Endpoint Protection
+      brand: Symantec Endpoint Protection 14
     nexttasks:
       '#none#':
       - "23"
@@ -80,10 +80,10 @@ tasks:
       version: -1
       name: sep-groups-info
       description: Get information about groups.
-      script: Symantec Endpoint Protection|||sep-groups-info
+      script: Symantec Endpoint Protection 14|||sep-groups-info
       type: regular
       iscommand: true
-      brand: Symantec Endpoint Protection
+      brand: Symantec Endpoint Protection 14
     nexttasks:
       '#none#':
       - "25"
@@ -320,10 +320,10 @@ tasks:
       version: -1
       name: sep-endpoints-info (hostname = WIN-EE8OQ1NRFR0)
       description: Get information about groups.
-      script: Symantec Endpoint Protection|||sep-endpoints-info
+      script: Symantec Endpoint Protection 14|||sep-endpoints-info
       type: regular
       iscommand: true
-      brand: Symantec Endpoint Protection
+      brand: Symantec Endpoint Protection 14
     nexttasks:
       '#none#':
       - "30"
@@ -443,10 +443,10 @@ tasks:
       version: -1
       name: sep-update-content (by IP)
       description: Updates the content of the given client.
-      script: Symantec Endpoint Protection|||sep-update-content
+      script: Symantec Endpoint Protection 14|||sep-update-content
       type: regular
       iscommand: true
-      brand: Symantec Endpoint Protection
+      brand: Symantec Endpoint Protection 14
     nexttasks:
       '#none#':
       - "36"
@@ -504,10 +504,10 @@ tasks:
       version: -1
       name: sep-quarantine (by hostname)
       description: Updates the content of the given client.
-      script: Symantec Endpoint Protection|||sep-quarantine
+      script: Symantec Endpoint Protection 14|||sep-quarantine
       type: regular
       iscommand: true
-      brand: Symantec Endpoint Protection
+      brand: Symantec Endpoint Protection 14
     nexttasks:
       '#none#':
       - "38"
@@ -597,10 +597,10 @@ tasks:
       id: c7f3d792-f65d-449e-8975-3b5f048b96d5
       version: -1
       name: sep-command-status (SEPM.LastCommand.[2].CommandId)
-      script: Symantec Endpoint Protection|||sep-command-status
+      script: Symantec Endpoint Protection 14|||sep-command-status
       type: regular
       iscommand: true
-      brand: Symantec Endpoint Protection
+      brand: Symantec Endpoint Protection 14
     nexttasks:
       '#none#':
       - "41"
@@ -719,3 +719,4 @@ view: |-
     }
   }
 inputs: []
+releaseNotes: "-"

@@ -35,10 +35,10 @@ tasks:
       version: -1
       name: Submit the file to Wildfire
       description: Upload file to WildFire for analysis.
-      script: WildFire|||wildfire-upload
+      script: Palo Alto WildFire|||wildfire-upload
       type: regular
       iscommand: true
-      brand: WildFire
+      brand: Palo Alto WildFire
     nexttasks:
       '#none#':
       - "2"
@@ -60,10 +60,10 @@ tasks:
       version: -1
       name: Get wildfire report in requested format
       description: Retrieve results for a file hash using WildFire
-      script: WildFire|||wildfire-report
+      script: Palo Alto WildFire|||wildfire-report
       type: regular
       iscommand: true
-      brand: WildFire
+      brand: Palo Alto WildFire
     nexttasks:
       '#none#':
       - "5"
@@ -98,7 +98,7 @@ tasks:
       "yes":
       - "1"
     scriptarguments:
-      value: modules.brand(val==='WildFire')
+      value: modules.brand(val==='Palo Alto WildFire')
     view: |-
       {
         "position": {
@@ -134,10 +134,10 @@ tasks:
       version: -1
       name: Also get WildFire report as PDF
       description: Retrieve results for a file hash using WildFire
-      script: WildFire|||wildfire-report
+      script: Palo Alto WildFire|||wildfire-report
       type: regular
       iscommand: true
-      brand: WildFire
+      brand: Palo Alto WildFire
     nexttasks:
       '#none#':
       - "4"
@@ -170,3 +170,4 @@ inputs:
 - key: ReportFormat
   value: xml
   description: ""
+releaseNotes: "-"

@@ -152,10 +152,10 @@ tasks:
       version: -1
       name: Hunt for devices accessing bad domains
       description: Returns a list of device IDs on which an indicator ran
-      script: FalconHost|||cs-device-ran-on
+      script: CrowdStrike FalconHost|||cs-device-ran-on
       type: regular
       iscommand: true
-      brand: FalconHost
+      brand: CrowdStrike FalconHost
     nexttasks:
       '#none#':
       - "9"
@@ -180,10 +180,10 @@ tasks:
       name: Hunt for devices running MD5
       description: |
         Returns a list of device IDs on which an indicator ran
-      script: FalconHost|||cs-device-ran-on
+      script: CrowdStrike FalconHost|||cs-device-ran-on
       type: regular
       iscommand: true
-      brand: FalconHost
+      brand: CrowdStrike FalconHost
     nexttasks:
       '#none#':
       - "9"
@@ -207,10 +207,10 @@ tasks:
       version: -1
       name: Hunt for devices accessing SHA1
       description: Returns a list of device IDs on which an indicator ran
-      script: FalconHost|||cs-device-ran-on
+      script: CrowdStrike FalconHost|||cs-device-ran-on
       type: regular
       iscommand: true
-      brand: FalconHost
+      brand: CrowdStrike FalconHost
     nexttasks:
       '#none#':
       - "9"
@@ -234,10 +234,10 @@ tasks:
       version: -1
       name: Hunt for devices accessing SHA256
       description: Returns a list of device IDs on which an indicator ran
-      script: FalconHost|||cs-device-ran-on
+      script: CrowdStrike FalconHost|||cs-device-ran-on
       type: regular
       iscommand: true
-      brand: FalconHost
+      brand: CrowdStrike FalconHost
     nexttasks:
       '#none#':
       - "9"
@@ -283,10 +283,10 @@ tasks:
       description: ""
       version: -1
       name: Get device details
-      script: FalconHost|||cs-device-search
+      script: CrowdStrike FalconHost|||cs-device-search
       type: regular
       iscommand: true
-      brand: FalconHost
+      brand: CrowdStrike FalconHost
     nexttasks:
       '#none#':
       - "12"
@@ -424,7 +424,7 @@ tasks:
       "yes":
       - "17"
     scriptarguments:
-      value: ${modules(val.brand == 'FalconHost' && val.state == 'active')}
+      value: ${modules(val.brand == 'CrowdStrike FalconHost' && val.state == 'active')}
     view: |-
       {
         "position": {
@@ -473,3 +473,4 @@ view: |-
     }
   }
 inputs: []
+releaseNotes: "-"

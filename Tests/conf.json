@@ -3,7 +3,7 @@
     "testInterval": 30,
     "tests": [
         {
-            "integrations": "Symantec Endpoint Protection",
+            "integrations": "Symantec Endpoint Protection 14",
             "playbookID": "sep_-_test_endpoint_search"
         },
         {
@@ -171,7 +171,7 @@
             "playbookID": "ThreatExchange-test"
         },
         {
-            "integrations": "jira",
+            "integrations": "Atlassian Jira",
             "playbookID": "Jira-Test"
         },
         {
@@ -189,7 +189,7 @@
             "playbookID": "IPInfoTest"
         },
         {
-            "integrations": "jira",
+            "integrations": "Atlassian Jira",
             "playbookID": "VerifyHumanReadableFormat"
         },
         {

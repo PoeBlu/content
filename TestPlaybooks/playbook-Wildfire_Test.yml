@@ -33,10 +33,10 @@ tasks:
       version: -1
       name: WildFire Detonate File
       description: Detonate file through WildFire
-      script: WildFire|||detonate-file
+      script: Palo Alto WildFire|||detonate-file
       type: regular
       iscommand: true
-      brand: WildFire
+      brand: Palo Alto WildFire
     scriptarguments:
       delay: ""
       format: ""
@@ -61,10 +61,10 @@ tasks:
       version: -1
       name: WildFire Detonate Remote File
       description: Detonate file hosted on a website through WildFire
-      script: WildFire|||detonate-file-remote
+      script: Palo Alto WildFire|||detonate-file-remote
       type: regular
       iscommand: true
-      brand: WildFire
+      brand: Palo Alto WildFire
     scriptarguments:
       delay: ""
       format: ""
@@ -91,3 +91,4 @@ view: |-
   }
 inputs: []
 outputs: []
+releaseNotes: "-"
